@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #1ebfc1;
+}
+html {
+  font-size: 62.5%;
+}
+/* Khôi phục lại mặc định theo rem */
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", system-ui;
+}
+/* =========== Common ========== */
+a {
+  text-decoration: none;
+}
+
+.main-content {
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(100% - 48px);
+}
+
+/* ============== Header ================ */
+.header-fixed {
+  position: sticky;
+  top: -44px;
+  z-index: 1;
+}
+header .body {
+  display: flex;
+  padding: 52px 0 8px;
+  align-items: center;
+}
+.nav {
+  margin-left: auto;
+}
+header .nav ul {
+  display: flex;
+  gap: 39px;
+}
+header .body .action {
+  display: flex;
+  margin-left: 153px;
+}
+header .action .action-btn {
+  padding: 12px 24px;
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 6px;
+  border: 1px solid #1ebfc1;
+}
+header .action .action-btn:hover{
+  color: #fff;
+  background: var(--primary-color);
+}
+header .action .action-link {
+  padding: 12px 24px;
+  color: #494949;
+  text-align: center;
+  font-size: 1.6rem;
+}
+header .nav ul a {
+  color: #2f3a3b;
+  font-size: 1.6rem;
+}
+header .action .action-link:hover,
+header .nav ul a:hover {
+  color: #2f3a3b;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-shadow: 0.5px 0 0 currentColor;
+}
